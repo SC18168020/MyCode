@@ -72,7 +72,7 @@ int main()
 {
 	int b;
 	//cout << "asdf" << endl;
-	int A[] = { 20,1,20,1,1,20,1,20,1,1,20 };
+	int A[] = { 20,1,20,1,1,20,1,20,1,1,20 };//testqwe
 	int temp[] = {0,0,0,0,0,0,0,0,0,0,0};
 	b = Max2(A,temp ,10);
 	cout << b << endl;
