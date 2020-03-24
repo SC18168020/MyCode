@@ -3,5 +3,5 @@ num = int(temp)
 if num == 8:
     print("You are right!")
 else:
-    print("You are wrong!")
+    print("You are wrong!")#修改一下
 
