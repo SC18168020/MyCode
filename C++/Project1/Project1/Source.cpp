@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 //string func(char a[], char b[], string c, int m, int n)
@@ -68,9 +69,22 @@ int Max2(int a[],int temp[],int n)//¶¯Ì¬¹æ»®
 	
 	return temp[n];
 }
+
+class Solution {
+public:
+	int maxProfit(vector<int>& prices) {
+		int max = prices[0];
+		int min = prices[0];
+		for (int i = 0; i < prices.size(); i++) {
+
+		}
+	}
+};
 int main()
 {
 	int b;
+	
+	c[0] = 1;
 	//cout << "asdf" << endl;
 	int A[] = { 20,1,20,1,1,20,1,20,1,1,20 };//test
 	int temp[] = {0,0,0,0,0,0,0,0,0,0,0};
