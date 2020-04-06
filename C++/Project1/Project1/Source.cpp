@@ -1,28 +1,32 @@
 #include <iostream>
 #include <string>
 #include <stack>
+#include <vector>
 using namespace std;
 
+class sulution {
+public:
+	int removeDuplicates(vector<int>& nums) {
+		int n = nums.size();
+		if (n == 0) return 0;
+		int count = 1;
 
+		for (int i = 0; i < n-1; i++) {
+			int j = i + 1;
+			while(nums[j++] == nums[i]){}
+			nums[i + 1] = nums[j - 1];
+		}
+	}
+};
 int main()
 {
-	int a[] = { 1,3,2,0,3,0,5,0,8 };
-	stack<int> s;
-	int i = 0;
-	for (i = 0; i < 9; i++) {
-		if (a[i]) s.push(a[i]);
-		 
+	
+	vector< vector <int> > a(3);
+	for (int i = 0; i < 3; i++) {
+		a[i].resize(3);
 	}
-
-	for (i = s.size(); s.size() < 9; i++) {
-		s.push(0);
-	}
-
-	for (i = 8; i > -1; i--) {
-		a[i] = s.top();
-		s.pop();
-		cout << a[i];
-	}
+	int n = a.size();
+	cout << n << endl;
 	return 0;
 }
 
